@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="theme">
+                <div class="circle">
+                  <button id="red" class="btn1" onclick="currColor='red';"></button>
+                  <button id="blue" class="btn2" onclick="currColor='blue';"></button>
+                  <button id="green" class="btn3" onclick="currColor='green';"></button>
+                </div>
+                <div id="icon">
+                <button class = "add" onclick="makeTicket(); currState='';">+</button>
+                <button class="add" id = "add" onclick="currState = 'del';">-</button>
+            </div>
+            </div>
+        </div>
+    </nav>
+ 
+    <br>
+    <div id="des">
+        <input id="text" type="text">
+    </div>
+    <br>
+
+    <div id="mid">
+
+    </div>
+</body>
+</html>
