@@ -5,19 +5,35 @@
 .card{
     float: left;
     width: 20%;
-    padding: 0 20px;
-}
+    margin: 20px;
+    
 
+}
+.tic{
+    border: 1px solid black;
+}
+.d{
+    border: 1px solid black;
+}
 .col{
     height: 10px;
+    border: 1px solid black;
 }
 
 
-
+#des{
+    visibility: hidden;
+}
 #text{
     display: table;
     margin: 0 auto;
     height: 100px;
+    
+}
+
+#create{
+    display: table;
+    margin: 0 auto;
 }
 
 

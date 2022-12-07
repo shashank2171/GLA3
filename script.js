@@ -1,9 +1,13 @@
 var currState = "";
-var currColor = "";
+var currColor = "red";
 var currTicket = "";
 
 function makeTicket(){
+
+    var d = document.getElementById("text").value;
+
     var body = document.getElementById("mid");
+    body
 
     var card = document.createElement("div");
     card.setAttribute("class","card");
@@ -19,9 +23,10 @@ function makeTicket(){
 
     col.style.backgroundColor=currColor;
     var des = document.createElement("div");
-
+    des.setAttribute("class","d");
     tic.innerHTML=token;
-    des.innerHTML="hahahahahaha";
+    des.innerHTML=d;
+    des.style.height="200px"
 
     card.appendChild(col);
     card.appendChild(tic);
@@ -36,6 +41,10 @@ function deleteCard(){
         card.innerHTML="";
         currTicket="";
     }
+}
+
+function change(){
+    document.getElementById('des').style.visibility='visible';
 }
 
 

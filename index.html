@@ -19,8 +19,8 @@
                   <button id="green" class="btn3" onclick="currColor='green';"></button>
                 </div>
                 <div id="icon">
-                <button class = "add" onclick="makeTicket(); currState='';">+</button>
-                <button class="add" id = "add" onclick="currState = 'del';">-</button>
+                <button class = "add" onclick="change();">+</button>
+                <button class="add" id = "add" onclick="currState = 'del'; ">-</button>
             </div>
             </div>
         </div>
@@ -29,8 +29,10 @@
     <br>
     <div id="des">
         <input id="text" type="text">
-    </div>
+    
+        <button id="create" onclick="makeTicket(); currState=''; document.getElementById('des').style.visibility='hidden';">Create</button>
     <br>
+    </div>
 
     <div id="mid">
 
